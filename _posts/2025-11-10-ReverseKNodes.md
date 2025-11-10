@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Reverse Nodes in K group"
+title: "Reverse Nodes in K Group"
+show_title: true
 date: 2025-11-10
 description: "Full explanation, pointer trace, and walkthrough for Reverse Nodes in K-Group from NeetCode"
 ---
