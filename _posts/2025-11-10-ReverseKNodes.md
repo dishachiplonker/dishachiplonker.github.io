@@ -64,3 +64,41 @@ class Solution:
             k -= 1
         return node
 ```
+---
+
+## 🧠 Key Idea
+
+Instead of reversing the whole list at once, we repeatedly:
+
+1. Identify the k-th node from the current start  
+2. Reverse exactly those k nodes  
+3. Reconnect the reversed portion  
+4. Move to the next group  
+
+We use:
+
+- `dummy` node → handles head edge case  
+- `groupPrev` → node before the current group  
+- `getKth()` → returns k-th node ahead (or `None`)  
+- `prev`, `curr`, `tmp` → classic linked-list reversal pointers  
+
+---
+
+## 🧰 Why a Dummy Node?
+
+We attach a fake node at the front:
+
+```
+dummy → 1 → 2 → 3 → 4 → 5
+```
+
+This simplifies edge cases like reversing starting at the head (so head is easy to reassign).
+Hence, `groupPrev` (in the code) starts at `dummy`.
+
+---
+
+## 🔍 Helper: `getKth()`
+
+Moves `k` steps forward and returns the k-th node relative to the start.
+
+If fewer than `k` nodes remain → return `None` → stop reversing.
