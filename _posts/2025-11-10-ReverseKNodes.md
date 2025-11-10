@@ -24,10 +24,16 @@ Given a linked list, reverse nodes in groups of `k`.
 If fewer than `k` nodes remain at the end, leave them as-is.
 
 ---
-
-## ✅ Python Code : [<u>NeetCode Link</u>](https://neetcode.io/problems/reverse-nodes-in-k-group?list=neetcode150)
+## ✅ Python Code — [<u>NeetCode Link</u>](https://neetcode.io/problems/reverse-nodes-in-k-group?list=neetcode150)
 
 ```python
+from typing import Optional
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         dummy = ListNode(0, head)
@@ -45,11 +51,11 @@ class Solution:
                 curr.next = prev
                 prev = curr
                 curr = tmp
-            
+
             tmp = groupPrev.next
             groupPrev.next = kth
             groupPrev = tmp
-        
+
         return dummy.next
 
     def getKth(self, node, k):
