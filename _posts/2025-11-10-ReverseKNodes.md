@@ -16,11 +16,8 @@ So I wrote this blog to help anyone struggling the same way, using a full visual
 Before we dive in, shout-out to [NeetCode](https://neetcode.io/) - phenomenal explanation and free content.  
 
 ---
+## [<u>Reverse Nodes in K-Group</u>](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) — Problem Summary
 
-## 📎 Problem Summary
-> [<u>Reverse Nodes in K-Group</u>](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) — LeetCode 
-
-**Goal:**  
 Given a linked list, reverse nodes in groups of `k`.  
 If fewer than `k` nodes remain at the end, leave them as-is.
 
