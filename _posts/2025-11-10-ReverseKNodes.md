@@ -6,6 +6,8 @@ date: 2025-11-10
 description: "Full explanation, pointer trace, and walkthrough for Reverse Nodes in K-Group from NeetCode"
 ---
 
+# Reverse Nodes in K group
+
 This is one of my favorite problems in the NeetCode 150 list because it completely stumped me the first time. Because, how can reversing a few nodes be this tricky?
 
 Being honest, it took me 3-4 times of going back to NeetCode’s YouTube solution to start making sense of the problem.
