@@ -1,5 +1,6 @@
 ---
-title: "Reverse Nodes in K-Group — Walkthrough"
+layout: post
+title: "Reverse Nodes in K group"
 date: 2025-11-10
 description: "Full explanation, pointer trace, and walkthrough for Reverse Nodes in K-Group from NeetCode"
 ---
@@ -24,10 +25,9 @@ Given a linked list, reverse nodes in groups of `k`.
 If fewer than `k` nodes remain at the end, leave them as-is.
 
 ---
-## ✅ Python Code — [<u>NeetCode Link</u>](https://neetcode.io/problems/reverse-nodes-in-k-group?list=neetcode150)
+## Python Code — [<u>NeetCode Link</u>](https://neetcode.io/problems/reverse-nodes-in-k-group?list=neetcode150)
 
 ```python
-from typing import Optional
 
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -66,7 +66,7 @@ class Solution:
 ```
 ---
 
-## 🧠 Key Idea
+## Key Idea
 
 Instead of reversing the whole list at once, we repeatedly:
 
@@ -84,7 +84,9 @@ We use:
 
 ---
 
-## 🧰 Why a Dummy Node?
+## Edge Case 
+
+Why a Dummy Node?
 
 We attach a fake node at the front:
 
